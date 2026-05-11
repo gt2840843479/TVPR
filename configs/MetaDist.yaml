@@ -1,0 +1,20 @@
+cora:
+  momentum: 0.91
+  temperature: 0.7
+  lr: 0.1
+  alpha: 1
+citeseer:
+  momentum: 0.9
+  temperature: 0.7
+  lr: 0.05
+  alpha: 1
+polblogs:
+  momentum: 0.99
+  temperature: 0.4
+  lr: 0.1
+  alpha: 1
+cora_ml:
+  momentum: 0.99
+  temperature: 0.7
+  lr: 0.1
+  alpha: 1

@@ -1,0 +1,44 @@
+cora:
+  droprate1: 0
+  coef1: 1.0
+  inner_train_iters: 100
+  lr: 0.01
+  momentum: 0.9
+  droprate2: 0.2
+  coef2: 1.0
+  vic_coef1: 1.0
+  vic_coef2: 2.0
+  vic_coef3: 2.0
+citeseer:
+  droprate1: 0
+  coef1: 1.0
+  inner_train_iters: 100
+  lr: 0.01
+  momentum: 0.9
+  droprate2: 0.2
+  coef2: 1.0
+  vic_coef1: 1.0
+  vic_coef2: 1.0
+  vic_coef3: 1.0
+polblogs:
+  droprate1: 0
+  coef1: 1.0
+  inner_train_iters: 500
+  lr: 0.01
+  momentum: 0.9
+  droprate2: 0.2
+  coef2: 0.5
+  vic_coef1: 1.0
+  vic_coef2: 1.0
+  vic_coef3: 2.0
+cora_ml:
+  droprate1: 0
+  coef1: 1.0
+  inner_train_iters: 60
+  lr: 0.1
+  momentum: 0.9
+  droprate2: 0.2
+  coef2: 0.5
+  vic_coef1: 1.0
+  vic_coef2: 2.0
+  vic_coef3: 4.0

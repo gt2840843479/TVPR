@@ -1,0 +1,8 @@
+momentum: 0.9
+dropnode: 0.05
+gauss_noise: 2.0e-4
+smooth_loop: 40
+wait_list: 4
+intervals: 0.25
+candidates: 32
+hidden: 16

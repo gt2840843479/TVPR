@@ -1,0 +1,14 @@
+lr: 0.01
+weight_decay: 5.0e-4
+symmetric: False
+lr_adj: 0.01
+alpha: 5.0e-4
+beta: 1.5
+gamma: 1
+lambda_: 0
+epochs: 400
+only_gcn: False
+outer_steps: 1
+inner_steps: 2
+debug: False
+phi: 0
