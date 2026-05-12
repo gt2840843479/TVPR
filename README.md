@@ -1,4 +1,4 @@
-# TVPR — Temporal-Average-Value-guided Perturbation Refinement
+# TVPR — Temporal-Average-Value-Guided Perturbation Refinement
 
 Code for reproducing **Table 2** results of the paper. Built upon the official [MetaDist](https://github.com/Crysta1ovo/MetaDist) implementation (AAAI 2026).
 
