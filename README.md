@@ -20,7 +20,7 @@ cd TVPR
 # MetaDist + TVPR (recommended, batch_size default=4)
 python run_tvpr.py --model MetaDist --dataset cora --ptb_rate 0.05
 
-# MetaAttack + TVPR
+# Meta-Self (MetaAttack) + TVPR
 python run_tvpr.py --model Meta-Self --dataset cora --ptb_rate 0.05
 
 # Custom batch size
@@ -35,7 +35,7 @@ python attack.py --model MetaDist --dataset cora --ptb_rate 0.05
 python test.py --model MetaDist --dataset cora --victim GCN --ptb_rate 0.05
 python test.py --model MetaDist --dataset cora --victim GAT --ptb_rate 0.05
 
-# MetaAttack (Meta-Train / Meta-Self)
+# Meta-Self, Meta-Train
 python attack.py --model Meta-Train --dataset cora --ptb_rate 0.05
 python attack.py --model Meta-Self --dataset cora --ptb_rate 0.05
 python test.py --model Meta-Train --dataset cora --victim GCN --ptb_rate 0.05
@@ -69,7 +69,7 @@ python test.py --model MetaDist --dataset cora --victim GCN --ptb_rate 0.05 \
 |--------|-----|-----|
 | MetaDist | 67.23±1.21 | 78.47±0.35 |
 | **MetaDist+TVPR (Ours)** | **62.07±1.86** | **76.88±1.05** |
-| **MetaAttack+TVPR (Ours)** | **66.66±0.43** | **76.94±1.13** |
+| **Meta-Self+TVPR (Ours)** | **66.66±0.43** | **76.94±1.13** |
 
 Pre-verified graphs are included at `ptb_graphs/MetaDist+TVPR_cora_0.05.txt`.
 
@@ -81,25 +81,25 @@ Pre-verified graphs are included at `ptb_graphs/MetaDist+TVPR_cora_0.05.txt`.
 | `run_tvpr.py` | **This paper** | Attack → TVPR → evaluate pipeline |
 | `test.py` | MetaDist (+ `--graph_path`) | Evaluation |
 | `attack.py` | MetaDist | Attack interface |
-| `models/` | MetaDist | GCN, MetaDist, MetaAttack, baselines |
+| `models/` | MetaDist | GCN, MetaDist, Meta-Self, baselines |
 | `configs/` | MetaDist | Attack configurations |
 | `data/` | MetaDist | Cora, CiteSeer, PolBlogs, Cora-ML |
 
 ## Citation
 
 ```bibtex
-@article{yao2025tvpr,
+@article{yao2026tvpr,
   title={Does Sequential Greedy Graph Poisoning Exhibit Perturbation Value Deviation?
          Temporal-Average-Value-Guided Perturbation Refinement},
   author={Yao, Xing and Liu, Hai and Liu, Zhiquan},
-  journal={IEEE Transactions on Dependable and Secure Computing},
-  year={2025}
+  journal={arXiv preprint},
+  year={2026}
 }
 
 @inproceedings{peng2026metadist,
   title={Surrogate as Teacher: Distillation-Guided Graph Poisoning Attack},
-  author={Peng, Shenggang and Liu, Hai and Yao, Xing and Tian, Youliang and Wu, Zhenqiang and Peng, Changgen},
-  booktitle={AAAI},
+  author={Peng, Xingyu and Xu, Ke},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2026}
 }
 ```
